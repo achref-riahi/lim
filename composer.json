@@ -1,0 +1,29 @@
+{
+  "type": "skilltest-junior",
+  "license": "proprietary",
+  "require": {
+    "symfony/console": "^3.4",
+    "php-di/php-di": "^6.4",
+    "symfony/validator": "^5.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Domain\\Machine\\": "domain/Machine/src/",
+      "UI\\": "ui/src/"
+    },
+    "files": ["helper/di.php"]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Domain\\Machine\\Tests\\": "domain/Machine/tests/",
+      "UI\\Tests\\": "ui/tests/"
+    },
+    "files": ["helper/di.php"]
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^1.8",
+    "phpunit/phpunit": "^9.5",
+    "pcov/clobber": "^2.0",
+    "mockery/mockery": "^1.5"
+  }
+}
